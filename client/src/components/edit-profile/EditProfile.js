@@ -6,7 +6,7 @@ import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import InputGroup from "../common/InputGroup";
 import SelectListGroup from "../common/SelectListGroup";
 import { createProfile, getCurrentProfile } from "../../actions/profileActions";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import isEmpty from "../../validation/is-empty";
 
 class CreateProfile extends Component {
@@ -187,6 +187,11 @@ class CreateProfile extends Component {
       <div className="create-profile">
         <div className="container">
           <div className="row">
+            <div>
+              <Link to="/dashboard" className="btn btn-light">
+                Go Back
+              </Link>
+            </div>
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Edit Your Profile</h1>
               <p className="ead text-center">
