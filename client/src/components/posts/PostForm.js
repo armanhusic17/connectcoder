@@ -16,7 +16,7 @@ class PostForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  componentWillReceiveProps(newProps) {
+  componentWillReveiveProps(newProps) {
     if (newProps.errors) {
       this.setState({ errors: newProps.errors });
     }
@@ -47,7 +47,7 @@ class PostForm extends Component {
       <div>
         <div className="post-form mb-3">
           <div className="card card-info">
-            <div className="bg-info text-white">Create a post, say hello.</div>
+            <div className="bg-info text-white"> Create a post, say hello.</div>
             <div className="card-body">
               <form onSubmit={this.onSubmit}>
                 <div className="form-group">
