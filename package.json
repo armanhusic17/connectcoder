@@ -4,7 +4,7 @@
   "description": "A Social Network for coders/programmers/engineers ",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "nodemon server",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
